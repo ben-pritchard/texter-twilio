@@ -21,8 +21,8 @@ group :development do
 end
 
 group :test, :development do
-  gem 'rspec-rails'
   gem 'dotenv-rails'
+  gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'launchy'
   gem 'pry'
@@ -32,4 +32,7 @@ group :test do
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'poltergeist'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'puffing-billy'
 end

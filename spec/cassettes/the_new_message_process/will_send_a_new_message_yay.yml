@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://<twilio account sid>:<twilio auth token>@api.twilio.com/2010-04-01/Accounts/<twilio
+      account sid>/Messages.json
+    body:
+      encoding: US-ASCII
+      string: Body=i%20am%20batman&To=7038506948&From=5032134044
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '50'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: CREATED
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 01 Apr 2015 23:28:34 GMT
+      X-Powered-By:
+      - AT-5000
+      X-Shenanigans:
+      - none
+      Content-Length:
+      - '744'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"sid": "SMb37df64312684c2fa184a23bc00c1c57", "date_created": "Wed,
+        01 Apr 2015 23:28:34 +0000", "date_updated": "Wed, 01 Apr 2015 23:28:34 +0000",
+        "date_sent": null, "account_sid": "<twilio account sid>", "to": "+17038506948",
+        "from": "+15032134044", "body": "i am batman", "status": "queued", "num_segments":
+        "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01",
+        "price": null, "price_unit": "USD", "error_code": null, "error_message": null,
+        "uri": "/2010-04-01/Accounts/<twilio account sid>/Messages/SMb37df64312684c2fa184a23bc00c1c57.json",
+        "subresource_uris": {"media": "/2010-04-01/Accounts/<twilio account sid>/Messages/SMb37df64312684c2fa184a23bc00c1c57/Media.json"}}'
+    http_version: 
+  recorded_at: Wed, 01 Apr 2015 23:28:34 GMT
+recorded_with: VCR 2.9.3
