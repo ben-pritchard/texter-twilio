@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'devise'
 gem 'rest-client'
+gem 'bootswatch-rails'
 
 group :development do
   gem 'byebug'

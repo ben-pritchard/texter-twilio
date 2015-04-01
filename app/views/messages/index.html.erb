@@ -1,0 +1,11 @@
+<h1>OMG AAK LMFAO PMP</h1>
+
+<img src="https://uproxx.files.wordpress.com/2013/09/leslie-knope-textme.gif" alt="leslie" />
+
+<br>
+
+<%= link_to 'send a new message', new_message_path, remote: true, class: 'btn btn-info', id: 'new_btn' %>
+
+<div id="messages">
+  <%= render @messages %>
+</div>
