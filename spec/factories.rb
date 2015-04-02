@@ -4,4 +4,8 @@ FactoryGirl.define do
     from('5032134044')
     body('B)')
   end
+  factory(:contact) do
+    name('Joy')
+    number('5412311102')
+  end
 end

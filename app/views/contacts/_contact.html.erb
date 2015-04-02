@@ -1,0 +1,10 @@
+<div class="contact" id="contact_<%= contact.id %>">
+  <hr>
+  <%= link_to 'X', contact_path(contact), data: {method: 'delete'}, class: 'btn btn-danger btn-xs', remote: true %>
+
+    <%= link_to contact.name, contact_path(contact), remote: true %>
+
+  <div class="box" id="box_for_<%= contact.id %>">
+
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<%= link_to 'add new contact', new_contact_path, remote: true, class: 'btn btn-info', id: 'new_contact_btn' %>
+
+<div id="contacts">
+  <%= render @contacts.reverse %>
+</div>

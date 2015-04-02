@@ -1,0 +1,6 @@
+// if page.select('#info_ERBTAG @contact.id ERBTAG').any?
+$('#box_for_<%= @contact.id %>').toggle();
+$('#info_<%= @contact.id %>').remove();
+// else
+$('#box_for_<%= @contact.id %>').append('<%= j render "info" %>');
+// end

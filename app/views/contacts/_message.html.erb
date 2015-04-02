@@ -1,0 +1,9 @@
+<div class="message" id="message_<%= message.id %>">
+<hr>
+  <%= link_to 'X', message_path(message), data: {method: 'delete'}, class: 'btn btn-danger btn-xs', remote: true %>
+  <h4>Sent message:</h4>
+
+  <p>To: <%= message.to %></p>
+  <p>From: <%= message.from %></p>
+  <p>Message: <%= message.body %> </p>
+</div>
