@@ -1,7 +1,10 @@
-<div class="message">
-<h4>Sent message:</h4>
+<div class="message" id="message_<%= message.id %>">
+  <h4>Sent message:</h4>
 
-<p>To: <%= message.to %></p>
-<p>From: <%= message.from %></p>
-<p>Message: <%= message.body %></p>
+  <p>To: <%= message.to %></p>
+  <p>From: <%= message.from %></p>
+  <p>Message: <%= message.body %></p>
+
+  <%= link_to 'x', message_path(message), data: {method: 'delete'}, class: 'btn btn-danger', remote: true %>
+
 </div>
