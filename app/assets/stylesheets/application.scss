@@ -17,3 +17,25 @@
 @import "bootstrap-sprockets";
 @import "bootswatch/slate/variables";
 @import "bootstrap";
+
+img {width: 420px;}
+.container {
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+
+
+  #new_form {
+    text-align:left;
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.message {
+  width: 250px;
+  margin: 0 auto;
+  .btn {
+    float: right;
+  }
+}

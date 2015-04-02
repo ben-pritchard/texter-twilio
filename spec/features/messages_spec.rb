@@ -16,8 +16,7 @@ describe 'the delete a message process' do
   it 'will delete a message', js: true, vcr: true do
     message = FactoryGirl.create(:message)
     visit root_path
-    save_and_open_page
-    click_on 'x'
+    click_on 'X'
     expect(page).to have_no_content message.body
   end
 end

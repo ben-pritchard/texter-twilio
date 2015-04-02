@@ -10,7 +10,6 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     if @message.save
-    # binding.pry
       respond_to do |format|
         format.html { redirect_to messages_path }
         format.js
